@@ -1,9 +1,8 @@
-# cci-docker
-Public docker images for circleci.
+<!-- Note: This readme turns up on hub.docker.com -->
 
-* **cci-dotnet-sdk-3.1** _dotnet/core/sdk:3.1 based image for general C# server testing._
+# cci-dotnet-sdk-3.1
+`mcr.microsoft.com/dotnet/core/sdk:3.1` based image.
 
-## Build locally
-```sh
-docker build -t local-cci-dotnet-sdk-3.1 - < Dockerfile.dotnet-sdk-3.1
-```
+With apt: **default-jre, wget, libzstd-dev, awscli** _+ chromium runtime dependencies._
+
+With dotnet tools: **dotnet-sonarscanner**
